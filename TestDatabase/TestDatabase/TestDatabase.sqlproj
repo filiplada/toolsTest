@@ -77,5 +77,6 @@
     <Build Include="dbo\Functions\TrimCharacters.sql" />
     <Build Include="dbo\Stored Procedures\Procedure1.sql" />
     <Build Include="dbo\Stored Procedures\GetPet.sql" />
+    <Build Include="dbo\Stored Procedures\GetClothes.sql" />
   </ItemGroup>
 </Project>

@@ -386,6 +386,32 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetClothes]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+SELECT * FROM Pet Where Id = 0 OR Id = 1]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[Pet]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Pet].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="81" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetClothes]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetPet]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
