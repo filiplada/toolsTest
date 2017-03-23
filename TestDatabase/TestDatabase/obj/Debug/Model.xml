@@ -412,6 +412,28 @@ SELECT * FROM Pet Where Id = 0 OR Id = 1]]></Value>
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetClothes]&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[GetDrinks]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+SELECT * FROM Drinks Where Id = 0 OR Id = 1]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry />
+				<Entry />
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="83" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetDrinks]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetPet]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[

@@ -64,6 +64,7 @@
     <Folder Include="dbo\Views\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\ItemDictionary.sql" />
@@ -78,5 +79,6 @@
     <Build Include="dbo\Stored Procedures\Procedure1.sql" />
     <Build Include="dbo\Stored Procedures\GetPet.sql" />
     <Build Include="dbo\Stored Procedures\GetClothes.sql" />
+    <Build Include="dbo\Stored Procedures\GetDrinks.sql" />
   </ItemGroup>
 </Project>
