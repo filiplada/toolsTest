@@ -14,7 +14,7 @@
     </RootPath>
     <RootNamespace>TestDatabase</RootNamespace>
     <AssemblyName>TestDatabase</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1045,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Polish_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,8 +59,23 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Income.sql" />
+    <Build Include="dbo\Tables\ItemDictionary.sql" />
+    <Build Include="dbo\Tables\Pet.sql" />
+    <Build Include="dbo\Tables\ImportantTable.sql" />
+    <Build Include="dbo\Tables\Adres.sql" />
+    <Build Include="dbo\Tables\Dish.sql" />
+    <Build Include="dbo\Tables\Table.sql" />
+    <Build Include="dbo\Tables\Clothes.sql" />
+    <Build Include="dbo\Views\View.sql" />
+    <Build Include="dbo\Functions\TrimCharacters.sql" />
+    <Build Include="dbo\Stored Procedures\Procedure1.sql" />
+    <Build Include="dbo\Stored Procedures\GetPet.sql" />
   </ItemGroup>
 </Project>
