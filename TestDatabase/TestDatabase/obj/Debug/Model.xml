@@ -422,7 +422,6 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -462,6 +461,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
+			<AttachedAnnotation Disambiguator="7" />
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[GetClothes]">
 			<Property Name="BodyScript">
@@ -492,7 +492,7 @@ SELECT * FROM Pet Where Id = 0 OR Id = 1]]></Value>
 		<Element Type="SqlProcedure" Name="[dbo].[GetDrinks]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
-SELECT * FROM Drinks Where Id = 0]]></Value>
+SELECT * FROM Drinks Where DrinkName = 'Piwo' AND DrinkCost < 10]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
@@ -500,7 +500,10 @@ SELECT * FROM Drinks Where Id = 0]]></Value>
 					<References Name="[dbo].[Drinks]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[Drinks].[Id]" />
+					<References Name="[dbo].[Drinks].[DrinkName]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Drinks].[DrinkCost]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Schema">
@@ -509,7 +512,7 @@ SELECT * FROM Drinks Where Id = 0]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="73" />
+				<Property Name="Length" Value="104" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[GetDrinks]&#xD;&#xA;AS" />

@@ -1,3 +1,3 @@
 ﻿CREATE PROCEDURE [dbo].[GetDrinks]
 AS
-SELECT * FROM Drinks Where Id = 0 
+SELECT * FROM Drinks Where DrinkName = 'Piwo' AND DrinkCost < 10
