@@ -1,2 +1,2 @@
 ﻿CREATE VIEW [dbo].[View]
-	AS SELECT * FROM [Pet]
+	AS SELECT  [Identity], [name], [description] FROM [Pet]

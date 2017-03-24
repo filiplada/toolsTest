@@ -10,9 +10,5 @@ C:\Users\filip.lada\Documents\Visual Studio 2015\Projects\TestDatabase\TestDatab
 C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\bin\Debug\TestDatabase.dacpac
 C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\bin\Debug\TestDatabase.dll
 C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\bin\Debug\TestDatabase.pdb
-C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\Model.xml
-C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\refactor.xml
-C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\postdeploy.sql
-C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\predeploy.sql
 C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\TestDatabase.dll
 C:\Users\filip.lada\Documents\Visual Studio 2015\Projects_\ThirdTestBranch\TestDatabase\TestDatabase\obj\Debug\TestDatabase.pdb

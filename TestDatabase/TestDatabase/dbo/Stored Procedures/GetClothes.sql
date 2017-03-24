@@ -1,3 +1,3 @@
 ﻿CREATE PROCEDURE [dbo].[GetClothes]
 AS
-SELECT * FROM Pet Where Id = 0 OR Id = 1
+SELECT * FROM Pet Where [Identity] = 0 OR [Identity] = 1

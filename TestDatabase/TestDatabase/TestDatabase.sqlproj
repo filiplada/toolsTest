@@ -81,5 +81,10 @@
     <Build Include="dbo\Stored Procedures\GetClothes.sql" />
     <Build Include="dbo\Stored Procedures\GetDrinks.sql" />
     <Build Include="dbo\Tables\Drinks.sql" />
+    <Build Include="dbo\Tables\Printer.sql" />
+    <Build Include="dbo\Stored Procedures\ModifyPrinter.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TestDatabase.refactorlog" />
   </ItemGroup>
 </Project>
